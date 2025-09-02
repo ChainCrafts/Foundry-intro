@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+ffi = true
+
+# FFI = Foreign Function Interface
+# When set to true, Foundry tests (via Forge) 
+# are allowed to call external programs/scripts on your machine during test execution.
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+remappings = [
+  '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
+]
